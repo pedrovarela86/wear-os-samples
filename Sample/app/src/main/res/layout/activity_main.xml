@@ -16,9 +16,10 @@
         app:boxedEdges="all">
 
         <TextView
+            android:background="@color/blue_a400"
             android:id="@+id/text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="235dp"
+            android:layout_height="73dp"
             android:text="@string/hello_world" />
 
     </FrameLayout>

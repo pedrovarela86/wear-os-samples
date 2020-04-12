@@ -13,3 +13,26 @@ class MainActivity : WearableActivity() {
         setAmbientEnabled()
     }
 }
+
+
+class SpecialFunction : () -> Unit {
+    override fun invoke() {
+        println("Not yet implemented")
+    }
+}
+
+class Other {
+
+    inline fun invoke(specialFunction: SpecialFunction) {
+
+    }
+
+}
+
+fun main() {
+    try {
+        SpecialFunction()()
+    } catch (ex: Exception) {
+        println("")
+    }
+}
